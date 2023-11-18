@@ -1,11 +1,11 @@
 <template>
   <div>
     <h1>This is the products page</h1>
-    <ul>
-      <li v-for="product in products" key="product.id">
-        <NuxtLink :to="`/products/${product.id}`">{{ product.title }}</NuxtLink>
-      </li>
-    </ul>
+    <div class="grid grid-cols-4 gap-5">
+      <div v-for="product in products">
+        <ProductCard :product="product" />
+      </div>
+    </div>
   </div>
 </template>
 
