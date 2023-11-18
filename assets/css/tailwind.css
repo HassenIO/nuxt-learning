@@ -1,0 +1,17 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+    @apply bg-gray-100;
+}
+
+@layer components {
+    .btn-nav {
+        @apply text-black text-sm py-2 px-4 hover:bg-blue-50 hover:rounded transition-all;
+    }
+
+    .btn-nav-active {
+        @apply bg-blue-500 text-white text-sm py-2 px-4 rounded;
+    }
+}
