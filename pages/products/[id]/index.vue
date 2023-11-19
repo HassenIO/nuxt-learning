@@ -1,7 +1,7 @@
 <script setup>
   const { id } = useRoute().params;
 
-  const { data: product } = await useFetch(`http://fakestoreapi.com/products/${id}`);
+  const { data: product } = await useFetch(`https://fakestoreapi.com/products/${id}`);
 
   if (!product.value) {
     throw createError({
