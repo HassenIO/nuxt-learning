@@ -18,6 +18,6 @@
 
 <style scoped>
   .router-link-exact-active {
-    @apply btn-nav-active;
+    @apply bg-blue-500 text-white text-sm py-2 px-4 rounded;
   }
 </style>
