@@ -2,4 +2,15 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss"],
+  app: {
+    head: {
+      title: "Nuxh Shopping",
+      meta: [
+        {
+          name: "description",
+          content: "Nuxt training project",
+        },
+      ],
+    },
+  },
 });

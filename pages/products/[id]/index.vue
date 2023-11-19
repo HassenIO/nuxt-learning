@@ -13,6 +13,11 @@
 </script>
 
 <template>
+  <Head>
+    <Title>Nuxt Shopping - {{ product.title }}</Title>
+    <Meta name="description" :content="product.description" />
+  </Head>
+
   <div>
     <ProductDetails :product="product" />
   </div>
